@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<title>S1 Irregular Verbs 不規則動詞表 (1-84) - 附中文解釋原版 - by Grow. With. Emmy</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Nunito:wght@700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#FFFBEB;--ink:#111827;--emerald:#059669;--emerald-soft:#D1FAE5;--muted:#9CA3AF}
+body{font-family:'Noto Sans TC','Nunito',system-ui;background:var(--paper);color:var(--ink);font-size:15px;line-height:1.6}
+.verb-pill{display:inline-flex;align-items:center;gap:6px;padding:7px 14px;border-radius:9999px;background:#fff;border:1px solid #e5e7eb;font-size:14px;font-weight:600;box-shadow:0 1px 3px rgba(0,0,0,.05)}
+.pron-btn{font-size:13px;padding:6px 12px;border-radius:9999px;background:#fff;border:1px solid #e5e7eb;cursor:pointer;transition:.15s;font-weight:600}
+.pron-btn:hover{background:#ecfdf5;border-color:#6ee7b7;color:#065f46}
+.tab-active{background:#111827!important;color:#fff!important}
+.group-active{background:#111827!important;color:#fff!important}
+.pattern-active{background:#059669!important;color:#fff!important}
+.pattern-active span{background:rgba(255,255,255,.3)!important;color:#fff!important}
+.read-note{font-size:11px;color:#b45309;background:#fef3c7;border:1px solid #fde68a;padding:2px 7px;border-radius:9999px;margin-left:6px;font-weight:600}
+button, .pron-btn, .verb-pill, .group-btn, .pattern-btn, .tab-btn{min-height:46px;touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+input{font-size:16px!important}
+.table-scroll{-webkit-overflow-scrolling:touch;overflow-x:auto}
+thead th{position:sticky;top:0;z-index:10}
+@media (hover:none){.pron-btn:hover{background:#fff}}
+/* Improve flow - reduce header height and make content more compact */
+.header-compact{padding-top:0.75rem!important;padding-bottom:0.75rem!important}
+.main-card{box-shadow:0 4px 16px rgba(0,0,0,0.06);border-radius:20px}
+.big-text{font-size:15px}
+@media (min-width:768px){.big-text{font-size:16px}}
+
+</style>
+</head>
+<body class="min-h-screen">
+<div class="sticky top-0 z-30 bg-[#FFFBEB]/90 backdrop-blur-xl border-b border-amber-100">
+  <div class="max-w-[1240px] mx-auto px-4 md:px-6 py-4">
+    <div class="flex items-start justify-between gap-4">
+      <div class="flex-1">
+        <h1 class="text-[22px] md:text-[28px] font-[900] tracking-tight leading-tight">S1 Irregular Verbs <span class="text-[#059669]">不規則動詞表 (1-84)</span> - 附中文解釋原版</h1>
+        <p class="mt-1 text-[12px] tracking-[0.22em] text-slate-400 font-medium">by Grow. With. Emmy</p>
+        <div class="mt-3 flex flex-wrap items-center gap-2">
+          <span class="inline-flex items-center rounded-full bg-white border px-3 py-1 text-[13px]">資料來源：老師提供PDF附件 · 86詞修訂版</span>
+          <span class="inline-flex items-center rounded-full bg-[#FFFBEB] border border-amber-200 px-3 py-1 text-[13px]">英式發音 en-GB · 獨立發音按鈕</span>
+        </div>
+      </div>
+      <div class="hidden md:block">
+        <div class="rounded-2xl bg-white border shadow-[0_4px_16px_rgba(0,0,0,0.06)] px-5 py-3 text-right min-w-[150px]">
+          <div class="text-[11px] tracking-widest font-bold text-slate-400">S1 ENGLISH</div>
+          <div class="text-[13px] font-bold mt-1">HONG KONG · 中一適用</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-4 flex flex-col lg:flex-row gap-3">
+      <div class="flex-1 relative">
+        <span class="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400">⌕</span>
+        <input id="search" placeholder="搜尋英文 (be, went) 或中文 (是、吃) ..." autocomplete="off" autocorrect="off" spellcheck="false" inputmode="search" class="w-full rounded-full bg-white border pl-11 pr-4 py-3 text-[15px] shadow-[0_2px_10px_rgba(0,0,0,0.04)] outline-none focus:ring-2 focus:ring-emerald-500">
+      </div>
+      <div class="flex gap-2 flex-wrap">
+        <button data-tab="overview" class="tab-btn tab-active px-4 py-2.5 rounded-full border bg-white text-[14px] font-bold shadow-sm">表格總覽</button>
+        <button data-tab="cards" class="tab-btn px-4 py-2.5 rounded-full border bg-white text-[14px] font-bold shadow-sm">學習卡</button>
+        <button data-tab="dictation" class="tab-btn px-4 py-2.5 rounded-full border bg-white text-[14px] font-bold shadow-sm">聽寫模式</button>
+        <button data-tab="boxes" class="tab-btn px-4 py-2.5 rounded-full border bg-white text-[14px] font-bold shadow-sm">複習盒</button>
+      </div>
+    </div>
+
+    <div class="mt-4 flex flex-col xl:flex-row gap-4">
+      <div class="flex flex-wrap items-center gap-2">
+        <span class="text-[13px] font-bold text-slate-500">變化規律</span>
+        <button data-pattern="all" class="pattern-btn pattern-active px-4 py-2 rounded-full border text-[13px] font-bold bg-white">全部 <span class="ml-1 bg-slate-100 px-1.5 py-0.5 rounded-full text-[10px]">86</span></button>
+        <button data-pattern="AAA" class="pattern-btn px-3.5 py-1.5 rounded-full border bg-white text-[12px] font-bold">AAA <span class="ml-1 bg-slate-100 px-1.5 py-0.5 rounded-full text-[10px]">10</span></button>
+        <button data-pattern="ABB" class="pattern-btn px-3.5 py-1.5 rounded-full border bg-white text-[12px] font-bold">ABB <span class="ml-1 bg-slate-100 px-1.5 py-0.5 rounded-full text-[10px]">39</span></button>
+        <button data-pattern="ABA" class="pattern-btn px-3.5 py-1.5 rounded-full border bg-white text-[12px] font-bold">ABA <span class="ml-1 bg-slate-100 px-1.5 py-0.5 rounded-full text-[10px]">3</span></button>
+        <button data-pattern="ABC" class="pattern-btn px-3.5 py-1.5 rounded-full border bg-white text-[12px] font-bold">ABC <span class="ml-1 bg-slate-100 px-1.5 py-0.5 rounded-full text-[10px]">34</span></button>
+      </div>
+      <div class="hidden xl:block w-px bg-amber-200/60"></div>
+      <div class="flex flex-wrap items-center gap-2">
+        <span class="text-[13px] font-bold text-slate-500">課文分組</span>
+        <button data-group="all" class="group-btn group-active px-4 py-2 rounded-full border text-[13px] font-bold bg-white">全部 1-84</button>
+        <button data-group="G1" class="group-btn px-3.5 py-1.5 rounded-full border bg-white text-[13px] font-bold">第1組 1-12</button>
+        <button data-group="G2" class="group-btn px-3.5 py-1.5 rounded-full border bg-white text-[13px] font-bold">第2組 13-24</button>
+        <button data-group="G3" class="group-btn px-3.5 py-1.5 rounded-full border bg-white text-[13px] font-bold">第3組 25-36</button>
+        <button data-group="G4" class="group-btn px-3.5 py-1.5 rounded-full border bg-white text-[13px] font-bold">第4組 37-48</button>
+        <button data-group="G5" class="group-btn px-3.5 py-1.5 rounded-full border bg-white text-[13px] font-bold">第5組 49-60</button>
+        <button data-group="G6" class="group-btn px-3.5 py-1.5 rounded-full border bg-white text-[13px] font-bold">第6組 61-72</button>
+        <button data-group="G7" class="group-btn px-3.5 py-1.5 rounded-full border bg-white text-[13px] font-bold">第7組 73-84</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<main class="max-w-[1240px] mx-auto px-4 md:px-6 py-5">
+  <!-- Global filter - always visible on all pages per your correction: keep 目前篩選 -->
+  <div id="global-filter" class="mb-5">
+    <div class="rounded-[18px] bg-white border shadow-[0_4px_16px_rgba(0,0,0,0.05)] p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+      <div class="flex items-center gap-3 flex-wrap">
+        <div class="text-[13px] font-bold">目前篩選</div>
+        <span id="count-badge-global" class="bg-[#111827] text-white text-[11px] px-2.5 py-1 rounded-full font-bold">86 個詞</span>
+        <span class="text-[11px] text-slate-400">支援觸控、手寫筆、鍵盤輸入 · iPhone / iPad / Android / Chromebook 適用</span>
+      </div>
+      <div id="current-chips-global" class="flex flex-wrap gap-1.5"></div>
+    </div>
+  </div>
+
+  <!-- OVERVIEW - first page only shows special notes -->
+  <section id="view-overview" class="view">
+    <div class="grid md:grid-cols-2 gap-4 mb-6">
+      <div class="rounded-[18px] bg-white border shadow-[0_4px_16px_rgba(0,0,0,0.05)] p-4 flex gap-3">
+        <div class="w-8 h-8 rounded-full bg-amber-100 flex items-center justify-center text-amber-600 font-bold text-sm">!</div>
+        <div class="flex-1">
+          <div class="text-[13px] font-bold">特殊標註：can / go / read / build</div>
+          <div class="text-[12px] text-slate-600 mt-1 leading-relaxed"><b>can → could → (been able)</b>：過去式用 <i>could</i><br><b>go → went → gone (been)</b>：<i>have been to</i> = 去過已回<br><b>read /riːd/ (=reed) → /red/ (=red)</b>：原形與過去式同形不同音<br><b>build /bɪld/ → built /bɪlt/</b>：ABB 型，過去式與分詞同形，屬正常</div>
+        </div>
+      </div>
+      <div class="rounded-[18px] bg-[#D1FAE5]/60 border border-emerald-100 p-4 flex gap-3">
+        <div class="w-8 h-8 rounded-full bg-emerald-600 text-white flex items-center justify-center font-bold text-xs">Aa</div>
+        <div class="flex-1">
+          <div class="text-[13px] font-bold text-emerald-800">英式發音小提示</div>
+          <div class="text-[12px] text-emerald-900/80 mt-1 leading-relaxed">全部採用 <b>Received Pronunciation / BBC English</b>。點擊 🔊 播放 en-GB，每個形態獨立按鈕。read 特別處理：原形 /riːd/，過去式 /red/。</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="rounded-[20px] bg-white border shadow-[0_8px_24px_rgba(0,0,0,0.06)] overflow-hidden">
+      <div class="overflow-auto table-scroll">
+        <table class="w-full text-[15px]">
+          <thead class="bg-[#111827] text-white text-[11px] tracking-widest">
+            <tr><th class="px-4 py-3 text-left">No.</th><th class="px-4 py-3 text-left">原形 BASE</th><th class="px-4 py-3 text-left">過去式 PAST</th><th class="px-4 py-3 text-left">過去分詞 PP</th><th class="px-4 py-3 text-left">中文</th></tr>
+          </thead>
+          <tbody id="tbody"></tbody>
+        </table>
+      </div>
+      <div class="p-3 bg-blue-50 border-t text-[12px] text-slate-700 leading-relaxed">
+<div class="mb-2"><b>🔊 發音已全面更新至所有頁面：</b> 表格總覽、學習卡、聽寫模式、複習盒全部使用同一發音引擎。tear 特別修正為 /teə/=tare (撕破) 非 /tɪə/ 眼淚，表格總覽、學習卡、聽寫、複習盒已同步更新。</div>
+<div class="p-3 bg-amber-50 border-t text-[12px] text-slate-600 leading-relaxed">
+💡 <b>發音說明：</b> 每個字後嘅 🔊 獨立發音。<br>
+• #7 <b>build</b> /bɪld/ → <b>built</b> /bɪlt/ / <b>built</b> /bɪlt/ 屬 ABB 型，過去式與過去分詞相同，屬正常。<br>
+• #38 <b>laid</b> /leɪd/、#43 <b>lied</b> /laɪd/、#48 <b>paid</b> /peɪd/ 尾音為 /d/，英式發音中 -ed 在元音後讀 /d/，非 /t/。若聽似 /t/ 為語音合成器輕讀，可參考 IPA。<br>
+• #76 <b>tear</b> /teə/ (=tare) → tore /tɔː/ → torn /tɔːn/ 為「撕破」之動詞，非眼睛「淚水」/tɪə/。#82 <b>wear</b> /weə/ → wore /wɔː/ → worn /wɔːn/ 已修正為英式發音。<br>
+• #50 <b>read</b> /riːd/=reed → /red/=red 已特別處理。
+</div>
+    </div>
+  </section>
+
+  <!-- CARDS -->
+  <section id="view-cards" class="view hidden">
+    <div class="rounded-[20px] bg-white border shadow-[0_8px_24px_rgba(0,0,0,0.06)] p-6 md:p-8 text-center">
+      <div class="flex justify-between items-center">
+        <span id="card-progress" class="text-[11px] tracking-widest text-slate-400 font-bold"></span>
+        <span id="card-no" class="text-[11px] tracking-widest text-slate-400 font-bold"></span>
+      </div>
+      <div id="card-zh" class="text-[28px] md:text-[32px] font-[900] mt-4"></div>
+      <div id="card-base" class="text-[40px] md:text-[48px] font-[900] mt-2"></div>
+      <div id="card-ipa" class="text-[13px] text-slate-500 mt-1"></div>
+      <button id="card-speak-base" class="mt-3 pron-btn">🔊 發音 base</button>
+      
+      <div id="card-reveal" class="hidden mt-8 border-t pt-6">
+        <div class="flex justify-center gap-8">
+          <div><div class="text-[11px] text-slate-400 font-bold tracking-widest">PAST</div><div id="card-past" class="text-[20px] font-bold mt-1"></div><div id="card-past-ipa" class="text-[11px] text-slate-500"></div><button data-speak="past" class="pron-btn mt-2">🔊 發音</button></div>
+          <div class="w-px bg-slate-200"></div>
+          <div><div class="text-[11px] text-slate-400 font-bold tracking-widest">PP</div><div id="card-pp" class="text-[20px] font-bold mt-1"></div><div id="card-pp-ipa" class="text-[11px] text-slate-500"></div><button data-speak="pp" class="pron-btn mt-2">🔊 發音</button></div>
+        </div>
+      </div>
+
+      <div class="mt-8 flex flex-wrap justify-center gap-2">
+        <button id="btn-show" class="px-6 py-2.5 rounded-full bg-[#111827] text-white text-[13px] font-bold">看動詞變化</button>
+        <button id="btn-dunno" class="hidden px-5 py-2.5 rounded-full bg-red-50 border border-red-100 text-red-700 text-[13px] font-bold">唔識得</button>
+        <button id="btn-know" class="hidden px-5 py-2.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700 text-[13px] font-bold">識得</button>
+      </div>
+
+      <div class="mt-6 pt-6 border-t flex flex-wrap justify-center gap-2">
+        <button id="btn-prev" class="px-4 py-2 rounded-full bg-white border text-[12px] font-bold">← 上一個</button>
+        <button id="btn-next" class="px-4 py-2 rounded-full bg-white border text-[12px] font-bold">下一個 →</button>
+        <button id="btn-first" class="px-4 py-2 rounded-full bg-white border text-[12px] font-bold">回到第一個</button>
+        <button id="btn-reset-card" class="px-4 py-2 rounded-full bg-amber-50 border border-amber-200 text-amber-800 text-[12px] font-bold">重設</button>
+      </div>
+      <div class="mt-3 text-[11px] text-slate-400">上方揀組會自動跟隨跳轉 · 支援觸控滑動及手寫筆</div>
+    </div>
+  </section>
+
+  <!-- DICTATION -->
+  <section id="view-dictation" class="view hidden">
+    <div class="rounded-[20px] bg-white border shadow p-5">
+      <div class="flex gap-3 items-center flex-wrap">
+        <select id="dict-group" class="border rounded-full px-4 py-2 text-[13px] font-bold min-h-[44px]"><option value="all">全部</option><option value="G1">第1組</option><option value="G2">第2組</option><option value="G3">第3組</option><option value="G4">第4組</option><option value="G5">第5組</option><option value="G6">第6組</option><option value="G7">第7組</option></select>
+        <button id="start-dict" class="px-5 py-2 rounded-full bg-[#111827] text-white text-[13px] font-bold">開始 10 題聽寫</button>
+        <span class="text-[11px] text-slate-400">支援觸控鍵盤、手寫輸入，會跟隨上方分組同步</span>
+      </div>
+      <div id="dict-area" class="mt-5 space-y-3"></div>
+      <div id="dict-result" class="mt-4 font-bold text-[14px]"></div>
+    </div>
+  </section>
+
+  <!-- BOXES -->
+  <section id="view-boxes" class="view hidden">
+    <div class="rounded-[24px] bg-white border shadow-[0_8px_24px_rgba(0,0,0,0.06)] p-5 md:p-7">
+      <div class="flex flex-wrap items-center justify-between gap-3">
+        <div>
+          <h2 class="text-[18px] md:text-[20px] font-[900]">Leitner 複習盒 · 間歇重複</h2>
+          <p class="text-[12px] text-slate-500 mt-1">今堂課堂即時狀態 · Box 1 最頻密，Box 5 已掌握 · 上方揀組會自動篩選 · 支援觸控</p>
+        </div>
+        <div class="flex gap-2">
+          <span class="inline-flex items-center rounded-full bg-amber-100 px-3 py-1.5 text-[12px] font-bold">今日待複習: <span id="due-count" class="ml-1">86</span></span>
+          <button id="reset-boxes" class="px-4 py-1.5 rounded-full bg-[#111827] text-white text-[12px] font-bold">重置全部至 Box 1</button>
+        </div>
+      </div>
+
+      <div class="mt-6 grid grid-cols-1 md:grid-cols-5 gap-4">
+        <div class="rounded-[18px] border bg-red-50/60 p-4 min-h-[280px]"><div class="flex items-center justify-between"><span class="font-bold text-[15px]">Box 1</span><span id="box1-count" class="bg-[#111827] text-white text-[11px] px-2 py-1 rounded-full font-bold">86</span></div><div class="text-[11px] text-slate-500 mt-1">立即複習</div><div id="box1-list" class="mt-3 flex flex-wrap gap-1.5"></div></div>
+        <div class="rounded-[18px] border bg-amber-50/60 p-4 min-h-[280px]"><div class="flex items-center justify-between"><span class="font-bold text-[15px]">Box 2</span><span id="box2-count" class="bg-[#111827] text-white text-[11px] px-2 py-1 rounded-full font-bold">0</span></div><div class="text-[11px] text-slate-500 mt-1">今日複習</div><div id="box2-list" class="mt-3 flex flex-wrap gap-1.5"></div></div>
+        <div class="rounded-[18px] border bg-yellow-50/60 p-4 min-h-[280px]"><div class="flex items-center justify-between"><span class="font-bold text-[15px]">Box 3</span><span id="box3-count" class="bg-[#111827] text-white text-[11px] px-2 py-1 rounded-full font-bold">0</span></div><div class="text-[11px] text-slate-500 mt-1">明日</div><div id="box3-list" class="mt-3 flex flex-wrap gap-1.5"></div></div>
+        <div class="rounded-[18px] border bg-emerald-50/60 p-4 min-h-[280px]"><div class="flex items-center justify-between"><span class="font-bold text-[15px]">Box 4</span><span id="box4-count" class="bg-[#111827] text-white text-[11px] px-2 py-1 rounded-full font-bold">0</span></div><div class="text-[11px] text-slate-500 mt-1">3日後</div><div id="box4-list" class="mt-3 flex flex-wrap gap-1.5"></div></div>
+        <div class="rounded-[18px] border border-blue-200 bg-[#DBEAFE] p-4 min-h-[280px]"><div class="flex items-center justify-between"><span class="font-bold text-[15px] text-slate-800">Box 5</span><span id="box5-count" class="bg-blue-600 text-white text-[12px] px-2.5 py-1 rounded-full font-bold">0</span></div><div class="text-[12px] text-slate-600 mt-1 font-medium">7日後 / 已掌握</div><div id="box5-list" class="mt-3 flex flex-wrap gap-1.5"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROGRESS DASHBOARD -->
+  </main>
+
+<button id="back-to-top" class="fixed bottom-6 right-6 z-40 hidden w-12 h-12 rounded-full bg-[#111827] text-white shadow-[0_8px_24px_rgba(0,0,0,0.2)] flex items-center justify-center text-[20px] font-bold">↑</button>
+<footer class="max-w-[1240px] mx-auto px-4 md:px-6 py-10 text-center">
+  <button id="open-disclaimer" class="text-[12px] text-slate-500 underline underline-offset-4 hover:text-slate-800">免責聲明及使用條款 | Disclaimer & Terms of Use</button>
+  <div class="mt-2 text-[11px] text-slate-400">by Grow. With. Emmy • 僅供教學使用 • 支援 iPhone/iPad/Android/Chromebook 觸控及手寫筆</div>
+</footer>
+
+<div id="disclaimer-modal" class="fixed inset-0 bg-black/40 hidden z-50 flex items-center justify-center p-4">
+  <div class="bg-white rounded-[20px] max-w-[560px] w-full p-6 shadow-[0_20px_60px_rgba(0,0,0,0.2)]">
+    <div class="flex justify-between"><h4 class="font-bold text-[14px]">免責聲明及使用條款<br><span class="text-[11px] text-slate-500 font-normal">Disclaimer & Terms of Use</span></h4><button id="close-disclaimer" class="w-8 h-8 rounded-full bg-slate-100">✕</button></div>
+    <div class="mt-4 text-[12px] leading-relaxed text-slate-700 space-y-3 max-h-[60vh] overflow-auto">
+      <p><b>本程式由 Grow. With. Emmy 製作</b>，僅供香港中學英語教學及學生自習使用。</p>
+      <p>1. 發音使用瀏覽器 Web Speech API (en-GB)，僅作參考。read 特別處理：原形 /riːd/，過去式/分詞 /red/。</p>
+      <p>2. 動詞變化及中文解釋以學校派發之不規則動詞表為準，86 項 (含 38a/b 及 43a/b)。</p>
+      <p>3. 不收集個人資料，即時運作，支援觸控及手寫筆輸入。</p>
+      <p>4. 歡迎非商業教學分享，請保留署名。</p>
+    </div>
+  </div>
+</div>
+
+<script>
+const verbs=[
+{id:'1',no:1,base:'be',past:'was/were',pp:'been',zh:'是；在；存在',pattern:'ABC',group:'G1',ipaBase:'/biː/',ipaPast:'/wɒz/wɜː/',ipaPP:'/biːn/'},
+{id:'2',no:2,base:'become',past:'became',pp:'become',zh:'成為',pattern:'ABA',group:'G1',ipaBase:'/bɪˈkʌm/',ipaPast:'/bɪˈkeɪm/',ipaPP:'/bɪˈkʌm/'},
+{id:'3',no:3,base:'begin',past:'began',pp:'begun',zh:'開始',pattern:'ABC',group:'G1',ipaBase:'/bɪˈɡɪn/',ipaPast:'/bɪˈɡæn/',ipaPP:'/bɪˈɡʌn/'},
+{id:'4',no:4,base:'blow',past:'blew',pp:'blown',zh:'吹',pattern:'ABC',group:'G1',ipaBase:'/bləʊ/',ipaPast:'/bluː/',ipaPP:'/bləʊn/'},
+{id:'5',no:5,base:'break',past:'broke',pp:'broken',zh:'打破',pattern:'ABC',group:'G1',ipaBase:'/breɪk/',ipaPast:'/brəʊk/',ipaPP:'/ˈbrəʊkən/'},
+{id:'6',no:6,base:'bring',past:'brought',pp:'brought',zh:'帶來',pattern:'ABB',group:'G1',ipaBase:'/brɪŋ/',ipaPast:'/brɔːt/',ipaPP:'/brɔːt/'},
+{id:'7',no:7,base:'build',past:'built',pp:'built',zh:'建造',pattern:'ABB',group:'G1',ipaBase:'/bɪld/',ipaPast:'/bɪlt/',ipaPP:'/bɪlt/'},
+{id:'8',no:8,base:'buy',past:'bought',pp:'bought',zh:'買',pattern:'ABB',group:'G1',ipaBase:'/baɪ/',ipaPast:'/bɔːt/',ipaPP:'/bɔːt/'},
+{id:'9',no:9,base:'can',past:'could',pp:'(been able)',zh:'能夠',pattern:'ABC',group:'G1',ipaBase:'/kæn/',ipaPast:'/kʊd/',ipaPP:'/(biːn ˈeɪbl)/'},
+{id:'10',no:10,base:'catch',past:'caught',pp:'caught',zh:'捉住；捕捉',pattern:'ABB',group:'G1',ipaBase:'/kætʃ/',ipaPast:'/kɔːt/',ipaPP:'/kɔːt/'},
+{id:'11',no:11,base:'choose',past:'chose',pp:'chosen',zh:'選擇',pattern:'ABC',group:'G1',ipaBase:'/tʃuːz/',ipaPast:'/tʃəʊz/',ipaPP:'/ˈtʃəʊzən/'},
+{id:'12',no:12,base:'come',past:'came',pp:'come',zh:'來',pattern:'ABA',group:'G1',ipaBase:'/kʌm/',ipaPast:'/keɪm/',ipaPP:'/kʌm/'},
+{id:'13',no:13,base:'cost',past:'cost',pp:'cost',zh:'花費',pattern:'AAA',group:'G2',ipaBase:'/kɒst/',ipaPast:'/kɒst/',ipaPP:'/kɒst/'},
+{id:'14',no:14,base:'cut',past:'cut',pp:'cut',zh:'切；割',pattern:'AAA',group:'G2',ipaBase:'/kʌt/',ipaPast:'/kʌt/',ipaPP:'/kʌt/'},
+{id:'15',no:15,base:'do',past:'did',pp:'done',zh:'做',pattern:'ABC',group:'G2',ipaBase:'/duː/',ipaPast:'/dɪd/',ipaPP:'/dʌn/'},
+{id:'16',no:16,base:'draw',past:'drew',pp:'drawn',zh:'畫；拉',pattern:'ABC',group:'G2',ipaBase:'/drɔː/',ipaPast:'/druː/',ipaPP:'/drɔːn/'},
+{id:'17',no:17,base:'dream',past:'dreamt',pp:'dreamt',zh:'做夢',pattern:'ABB',group:'G2',ipaBase:'/driːm/',ipaPast:'/dremt/',ipaPP:'/dremt/'},
+{id:'18',no:18,base:'drink',past:'drank',pp:'drunk',zh:'喝',pattern:'ABC',group:'G2',ipaBase:'/drɪŋk/',ipaPast:'/dræŋk/',ipaPP:'/drʌŋk/'},
+{id:'19',no:19,base:'drive',past:'drove',pp:'driven',zh:'駕駛',pattern:'ABC',group:'G2',ipaBase:'/draɪv/',ipaPast:'/drəʊv/',ipaPP:'/ˈdrɪvən/'},
+{id:'20',no:20,base:'eat',past:'ate',pp:'eaten',zh:'吃',pattern:'ABC',group:'G2',ipaBase:'/iːt/',ipaPast:'/et/',ipaPP:'/ˈiːtən/'},
+{id:'21',no:21,base:'fall',past:'fell',pp:'fallen',zh:'跌倒；落下',pattern:'ABC',group:'G2',ipaBase:'/fɔːl/',ipaPast:'/fel/',ipaPP:'/ˈfɔːlən/'},
+{id:'22',no:22,base:'feed',past:'fed',pp:'fed',zh:'餵',pattern:'ABB',group:'G2',ipaBase:'/fiːd/',ipaPast:'/fed/',ipaPP:'/fed/'},
+{id:'23',no:23,base:'feel',past:'felt',pp:'felt',zh:'感覺',pattern:'ABB',group:'G2',ipaBase:'/fiːl/',ipaPast:'/felt/',ipaPP:'/felt/'},
+{id:'24',no:24,base:'find',past:'found',pp:'found',zh:'找到',pattern:'ABB',group:'G2',ipaBase:'/faɪnd/',ipaPast:'/faʊnd/',ipaPP:'/faʊnd/'},
+{id:'25',no:25,base:'fly',past:'flew',pp:'flown',zh:'飛',pattern:'ABC',group:'G3',ipaBase:'/flaɪ/',ipaPast:'/fluː/',ipaPP:'/fləʊn/'},
+{id:'26',no:26,base:'forget',past:'forgot',pp:'forgotten',zh:'忘記',pattern:'ABC',group:'G3',ipaBase:'/fəˈɡet/',ipaPast:'/fəˈɡɒt/',ipaPP:'/fəˈɡɒtən/'},
+{id:'27',no:27,base:'get',past:'got',pp:'got',zh:'得到',pattern:'ABB',group:'G3',ipaBase:'/ɡet/',ipaPast:'/ɡɒt/',ipaPP:'/ɡɒt/'},
+{id:'28',no:28,base:'give',past:'gave',pp:'given',zh:'給',pattern:'ABC',group:'G3',ipaBase:'/ɡɪv/',ipaPast:'/ɡeɪv/',ipaPP:'/ˈɡɪvən/'},
+{id:'29',no:29,base:'go',past:'went',pp:'gone (been)',zh:'去',pattern:'ABC',group:'G3',ipaBase:'/ɡəʊ/',ipaPast:'/went/',ipaPP:'/ɡɒn/'},
+{id:'30',no:30,base:'have',past:'had',pp:'had',zh:'有',pattern:'ABB',group:'G3',ipaBase:'/hæv/',ipaPast:'/hæd/',ipaPP:'/hæd/'},
+{id:'31',no:31,base:'hear',past:'heard',pp:'heard',zh:'聽見',pattern:'ABB',group:'G3',ipaBase:'/hɪə/',ipaPast:'/hɜːd/',ipaPP:'/hɜːd/'},
+{id:'32',no:32,base:'hide',past:'hid',pp:'hidden',zh:'躲藏',pattern:'ABC',group:'G3',ipaBase:'/haɪd/',ipaPast:'/hɪd/',ipaPP:'/ˈhɪdən/'},
+{id:'33',no:33,base:'hit',past:'hit',pp:'hit',zh:'打；擊中',pattern:'AAA',group:'G3',ipaBase:'/hɪt/',ipaPast:'/hɪt/',ipaPP:'/hɪt/'},
+{id:'34',no:34,base:'hold',past:'held',pp:'held',zh:'握住；舉行',pattern:'ABB',group:'G3',ipaBase:'/həʊld/',ipaPast:'/held/',ipaPP:'/held/'},
+{id:'35',no:35,base:'hurt',past:'hurt',pp:'hurt',zh:'受傷；弄傷',pattern:'AAA',group:'G3',ipaBase:'/hɜːt/',ipaPast:'/hɜːt/',ipaPP:'/hɜːt/'},
+{id:'36',no:36,base:'keep',past:'kept',pp:'kept',zh:'保持',pattern:'ABB',group:'G3',ipaBase:'/kiːp/',ipaPast:'/kept/',ipaPP:'/kept/'},
+{id:'37',no:37,base:'know',past:'knew',pp:'known',zh:'知道',pattern:'ABC',group:'G4',ipaBase:'/nəʊ/',ipaPast:'/njuː/',ipaPP:'/nəʊn/'},
+{id:'38a',no:'38(a)',base:'lay',past:'laid',pp:'laid',zh:'放置',pattern:'ABB',group:'G4',ipaBase:'/leɪ/',ipaPast:'/leɪd/',ipaPP:'/leɪd/'},
+{id:'38b',no:'38(b)',base:'lay',past:'laid',pp:'laid',zh:'產卵',pattern:'ABB',group:'G4',ipaBase:'/leɪ/',ipaPast:'/leɪd/',ipaPP:'/leɪd/'},
+{id:'39',no:39,base:'learn',past:'learnt',pp:'learnt',zh:'學習',pattern:'ABB',group:'G4',ipaBase:'/lɜːn/',ipaPast:'/lɜːnt/',ipaPP:'/lɜːnt/'},
+{id:'40',no:40,base:'leave',past:'left',pp:'left',zh:'離開',pattern:'ABB',group:'G4',ipaBase:'/liːv/',ipaPast:'/left/',ipaPP:'/left/'},
+{id:'41',no:41,base:'lend',past:'lent',pp:'lent',zh:'借出',pattern:'ABB',group:'G4',ipaBase:'/lend/',ipaPast:'/lent/',ipaPP:'/lent/'},
+{id:'42',no:42,base:'let',past:'let',pp:'let',zh:'讓',pattern:'AAA',group:'G4',ipaBase:'/let/',ipaPast:'/let/',ipaPP:'/let/'},
+{id:'43a',no:'43(a)',base:'lie',past:'lay',pp:'lain',zh:'躺；位於',pattern:'ABC',group:'G4',ipaBase:'/laɪ/',ipaPast:'/leɪ/',ipaPP:'/leɪn/'},
+{id:'43b',no:'43(b)',base:'lie',past:'lied',pp:'lied',zh:'說謊；撒謊',pattern:'AAA',group:'G4',ipaBase:'/laɪ/',ipaPast:'/laɪd/',ipaPP:'/laɪd/'},
+{id:'44',no:44,base:'lose',past:'lost',pp:'lost',zh:'失去',pattern:'ABB',group:'G5',ipaBase:'/luːz/',ipaPast:'/lɒst/',ipaPP:'/lɒst/'},
+{id:'45',no:45,base:'make',past:'made',pp:'made',zh:'製造；使',pattern:'ABB',group:'G5',ipaBase:'/meɪk/',ipaPast:'/meɪd/',ipaPP:'/meɪd/'},
+{id:'46',no:46,base:'mean',past:'meant',pp:'meant',zh:'意思是',pattern:'ABB',group:'G5',ipaBase:'/miːn/',ipaPast:'/ment/',ipaPP:'/ment/'},
+{id:'47',no:47,base:'meet',past:'met',pp:'met',zh:'遇見',pattern:'ABB',group:'G5',ipaBase:'/miːt/',ipaPast:'/met/',ipaPP:'/met/'},
+{id:'48',no:48,base:'pay',past:'paid',pp:'paid',zh:'付款',pattern:'ABB',group:'G5',ipaBase:'/peɪ/',ipaPast:'/peɪd/',ipaPP:'/peɪd/'},
+{id:'49',no:49,base:'put',past:'put',pp:'put',zh:'放',pattern:'AAA',group:'G5',ipaBase:'/pʊt/',ipaPast:'/pʊt/',ipaPP:'/pʊt/'},
+{id:'50',no:50,base:'read',past:'read',pp:'read',zh:'閱讀',pattern:'AAA',group:'G5',ipaBase:'/riːd/ (=reed)',ipaPast:'/red/ (=red)',ipaPP:'/red/ (=red)',isRead:true},
+{id:'51',no:51,base:'ride',past:'rode',pp:'ridden',zh:'騎',pattern:'ABC',group:'G5',ipaBase:'/raɪd/',ipaPast:'/rəʊd/',ipaPP:'/ˈrɪdən/'},
+{id:'52',no:52,base:'ring',past:'rang',pp:'rung',zh:'響鈴',pattern:'ABC',group:'G5',ipaBase:'/rɪŋ/',ipaPast:'/ræŋ/',ipaPP:'/rʌŋ/'},
+{id:'53',no:53,base:'rise',past:'rose',pp:'risen',zh:'上升',pattern:'ABC',group:'G5',ipaBase:'/raɪz/',ipaPast:'/rəʊz/',ipaPP:'/ˈrɪzən/'},
+{id:'54',no:54,base:'run',past:'ran',pp:'run',zh:'跑',pattern:'ABA',group:'G5',ipaBase:'/rʌn/',ipaPast:'/ræn/',ipaPP:'/rʌn/'},
+{id:'55',no:55,base:'say',past:'said',pp:'said',zh:'說',pattern:'ABB',group:'G5',ipaBase:'/seɪ/',ipaPast:'/sed/',ipaPP:'/sed/'},
+{id:'56',no:56,base:'see',past:'saw',pp:'seen',zh:'看見',pattern:'ABC',group:'G5',ipaBase:'/siː/',ipaPast:'/sɔː/',ipaPP:'/siːn/'},
+{id:'57',no:57,base:'sell',past:'sold',pp:'sold',zh:'賣',pattern:'ABB',group:'G6',ipaBase:'/sel/',ipaPast:'/səʊld/',ipaPP:'/səʊld/'},
+{id:'58',no:58,base:'send',past:'sent',pp:'sent',zh:'寄；送',pattern:'ABB',group:'G6',ipaBase:'/send/',ipaPast:'/sent/',ipaPP:'/sent/'},
+{id:'59',no:59,base:'set',past:'set',pp:'set',zh:'設定；放置',pattern:'AAA',group:'G6',ipaBase:'/set/',ipaPast:'/set/',ipaPP:'/set/'},
+{id:'60',no:60,base:'shake',past:'shook',pp:'shaken',zh:'搖動',pattern:'ABC',group:'G6',ipaBase:'/ʃeɪk/',ipaPast:'/ʃʊk/',ipaPP:'/ˈʃeɪkən/'},
+{id:'61',no:61,base:'shine',past:'shone',pp:'shone',zh:'發光；照耀',pattern:'ABB',group:'G6',ipaBase:'/ʃaɪn/',ipaPast:'/ʃɒn/',ipaPP:'/ʃɒn/'},
+{id:'62',no:62,base:'shoot',past:'shot',pp:'shot',zh:'射擊',pattern:'ABB',group:'G6',ipaBase:'/ʃuːt/',ipaPast:'/ʃɒt/',ipaPP:'/ʃɒt/'},
+{id:'63',no:63,base:'show',past:'showed',pp:'shown',zh:'顯示；展示',pattern:'ABC',group:'G6',ipaBase:'/ʃəʊ/',ipaPast:'/ʃəʊd/',ipaPP:'/ʃəʊn/'},
+{id:'64',no:64,base:'shut',past:'shut',pp:'shut',zh:'關上',pattern:'AAA',group:'G6',ipaBase:'/ʃʌt/',ipaPast:'/ʃʌt/',ipaPP:'/ʃʌt/'},
+{id:'65',no:65,base:'sing',past:'sang',pp:'sung',zh:'唱歌',pattern:'ABC',group:'G6',ipaBase:'/sɪŋ/',ipaPast:'/sæŋ/',ipaPP:'/sʌŋ/'},
+{id:'66',no:66,base:'sit',past:'sat',pp:'sat',zh:'坐',pattern:'ABB',group:'G6',ipaBase:'/sɪt/',ipaPast:'/sæt/',ipaPP:'/sæt/'},
+{id:'67',no:67,base:'sleep',past:'slept',pp:'slept',zh:'睡覺',pattern:'ABB',group:'G6',ipaBase:'/sliːp/',ipaPast:'/slept/',ipaPP:'/slept/'},
+{id:'68',no:68,base:'speak',past:'spoke',pp:'spoken',zh:'說話',pattern:'ABC',group:'G6',ipaBase:'/spiːk/',ipaPast:'/spəʊk/',ipaPP:'/ˈspəʊkən/'},
+{id:'69',no:69,base:'spell',past:'spelt',pp:'spelt',zh:'拼字',pattern:'ABB',group:'G7',ipaBase:'/spel/',ipaPast:'/spelt/',ipaPP:'/spelt/'},
+{id:'70',no:70,base:'spend',past:'spent',pp:'spent',zh:'花費',pattern:'ABB',group:'G7',ipaBase:'/spend/',ipaPast:'/spent/',ipaPP:'/spent/'},
+{id:'71',no:71,base:'stand',past:'stood',pp:'stood',zh:'站立',pattern:'ABB',group:'G7',ipaBase:'/stænd/',ipaPast:'/stʊd/',ipaPP:'/stʊd/'},
+{id:'72',no:72,base:'steal',past:'stole',pp:'stolen',zh:'偷',pattern:'ABC',group:'G7',ipaBase:'/stiːl/',ipaPast:'/stəʊl/',ipaPP:'/ˈstəʊlən/'},
+{id:'73',no:73,base:'swim',past:'swam',pp:'swum',zh:'游泳',pattern:'ABC',group:'G7',ipaBase:'/swɪm/',ipaPast:'/swæm/',ipaPP:'/swʌm/'},
+{id:'74',no:74,base:'take',past:'took',pp:'taken',zh:'拿；取',pattern:'ABC',group:'G7',ipaBase:'/teɪk/',ipaPast:'/tʊk/',ipaPP:'/ˈteɪkən/'},
+{id:'75',no:75,base:'teach',past:'taught',pp:'taught',zh:'教',pattern:'ABB',group:'G7',ipaBase:'/tiːtʃ/',ipaPast:'/tɔːt/',ipaPP:'/tɔːt/'},
+{id:'76',no:76,base:'tear',past:'tore',pp:'torn',zh:'撕破',pattern:'ABC',group:'G7',ipaBase:'/teə/',ipaPast:'/tɔː/',ipaPP:'/tɔːn/'},
+{id:'77',no:77,base:'tell',past:'told',pp:'told',zh:'告訴',pattern:'ABB',group:'G7',ipaBase:'/tel/',ipaPast:'/təʊld/',ipaPP:'/təʊld/'},
+{id:'78',no:78,base:'think',past:'thought',pp:'thought',zh:'想；認為',pattern:'ABB',group:'G7',ipaBase:'/θɪŋk/',ipaPast:'/θɔːt/',ipaPP:'/θɔːt/'},
+{id:'79',no:79,base:'throw',past:'threw',pp:'thrown',zh:'拋；扔',pattern:'ABC',group:'G7',ipaBase:'/θrəʊ/',ipaPast:'/θruː/',ipaPP:'/θrəʊn/'},
+{id:'80',no:80,base:'understand',past:'understood',pp:'understood',zh:'明白',pattern:'ABB',group:'G7',ipaBase:'/ˌʌndəˈstænd/',ipaPast:'/ˌʌndəˈstʊd/',ipaPP:'/ˌʌndəˈstʊd/'},
+{id:'81',no:81,base:'wake',past:'woke',pp:'woken',zh:'醒來',pattern:'ABC',group:'G7',ipaBase:'/weɪk/',ipaPast:'/wəʊk/',ipaPP:'/ˈwəʊkən/'},
+{id:'82',no:82,base:'wear',past:'wore',pp:'worn',zh:'穿著',pattern:'ABC',group:'G7',ipaBase:'/weə/',ipaPast:'/wɔː/',ipaPP:'/wɔːn/'},
+{id:'83',no:83,base:'win',past:'won',pp:'won',zh:'贏',pattern:'ABB',group:'G7',ipaBase:'/wɪn/',ipaPast:'/wʌn/',ipaPP:'/wʌn/'},
+{id:'84',no:84,base:'write',past:'wrote',pp:'written',zh:'寫',pattern:'ABC',group:'G7',ipaBase:'/raɪt/',ipaPast:'/rəʊt/',ipaPP:'/ˈrɪtən/'},
+];
+
+function speak(text, verbObj, field){
+  if(!text) return;
+  let speakText = text;
+  let rate = 0.85;
+  
+  // Comprehensive overrides for problematic verbs reported by user
+  if(verbObj){
+    const base = verbObj.base;
+    const id = verbObj.id;
+    
+    // #50 read - /riːd/ vs /red/
+    if(base==='read'){
+      if(field==='base') speakText='reed'; // force /riːd/ like reed
+      else speakText='red'; // /red/ like red
+      rate=0.8;
+    }
+    // #38 lay - laid /leɪd/ should be /d/ not /t/
+    else if(base==='lay'){
+      if(field==='base') speakText='lay';
+      else speakText='laid'; // ensure /d/ - keep as laid but slower
+      rate=0.75;
+    }
+    // #43 lie - two forms
+    else if(base==='lie'){
+      if(id==='43a'){ // lie - lay - lain (to lie down)
+        if(field==='base') speakText='lie'; // /laɪ/
+        else if(field==='past') speakText='lay'; // /leɪ/
+        else speakText='layn'; // force /leɪn/ for lain
+      } else if(id==='43b'){ // lie - lied - lied (to tell lie)
+        if(field==='base') speakText='lie';
+        else speakText='lide'; // force /laɪd/ clear d
+      } else {
+        // fallback
+        if(field!=='base') speakText=text;
+      }
+      rate=0.75;
+    }
+    // #48 pay - paid /peɪd/ should be /d/
+    else if(base==='pay'){
+      if(field==='base') speakText='pay';
+      else speakText='paid';
+      rate=0.75;
+    }
+    // #76 tear - /teə/ (rip) not /tɪə/ (eye water) - single word for cards/dictation
+    else if(base==='tear'){
+      if(field==='base'){
+        // Use "tare" = /teə/ (rip) distinct from "tier" /tɪə/ (eye). Single word for learning cards/dictation
+        speakText='tare'; // /teə/ 撕破
+      }
+      else if(field==='past') speakText='tore'; // /tɔː/
+      else speakText='torn'; // /tɔːn/
+      rate=0.65;
+    }
+    // #82 wear - /weə/ 
+    else if(base==='wear'){
+      if(field==='base') speakText='where'; // /weə/ same as wear in RP
+      else if(field==='past') speakText='wore'; // /wɔː/
+      else speakText='worn'; // /wɔːn/
+      rate=0.8;
+    }
+    // #7 build - /bɪld/ vs /bɪlt/
+    else if(base==='build'){
+      if(field==='base') speakText='build'; // /bɪld/
+      else speakText='built'; // /bɪlt/
+      rate=0.8;
+    }
+  }
+  
+  let c=speakText.replace(/[()]/g,'').replace(/\//g,' ').trim();
+  // Clean extra
+  if(!c) c=text;
+  const u=new SpeechSynthesisUtterance(c);
+  u.lang='en-GB';u.rate=rate;
+  const vs=speechSynthesis.getVoices();
+  // Prefer en-GB voice
+  const gb=vs.find(v=>v.lang&&v.lang.toLowerCase().includes('en-gb'));
+  const enGbDaniel = vs.find(v=>v.name&&v.name.toLowerCase().includes('daniel')); // iOS en-GB often Daniel
+  if(enGbDaniel) u.voice=enGbDaniel;
+  else if(gb) u.voice=gb;
+  speechSynthesis.cancel();
+  speechSynthesis.speak(u);
+}
+function getFiltered(){
+  const q=filter.search.toLowerCase();
+  return verbs.filter(v=>{
+    if(filter.group!=='all'&&v.group!==filter.group) return false;
+    if(filter.pattern!=='all'&&v.pattern!==filter.pattern) return false;
+    if(q) return (v.base+v.past+v.pp+v.zh+String(v.no)).toLowerCase().includes(q);
+    return true;
+  });
+}
+let filter={group:'all',pattern:'all',search:''};
+let boxes={1:verbs.map(v=>v.id),2:[],3:[],4:[],5:[]};
+let filteredForCards=[];
+let cardIdx=0;
+
+function render(){
+  const filtered=getFiltered();
+  filteredForCards=filtered;
+  if(cardIdx>=filteredForCards.length) cardIdx=0;
+  const globalBadge=document.getElementById('count-badge-global');
+  if(globalBadge) globalBadge.textContent=filtered.length+' 個詞';
+  const globalChips=document.getElementById('current-chips-global');
+  if(globalChips) globalChips.innerHTML=filtered.slice(0,14).map(v=>`<span class="inline-flex items-center gap-1 rounded-full bg-[#FFFBEB] border px-2.5 py-1 text-[11px]">${v.base}<button onclick="speak('${v.base}',verbs.find(x=>x.id==='${v.id}'),'base')" class="ml-1">🔊</button></span>`).join('')+(filtered.length>14?`<span class="text-[11px] text-slate-400">+${filtered.length-14}</span>`:'');
+  document.getElementById('tbody').innerHTML=filtered.map(v=>{
+    // Build buttons that let speak() do the override - pass original but speak() will map
+    const baseNote = v.base==='read'?'<span class="read-note">/riːd/=reed</span>': (v.base==='tear'?'<span class="read-note">/teə/=tare 撕破 ≠ /tɪə/眼淚 <button onclick="event.stopPropagation();speak(\'tear the paper\',{base:\'tear\',id:\'76\'},\'base\')" class="ml-1 px-2 py-0.5 text-[10px] bg-blue-100 border rounded-full">聽動詞語境 tear the paper</button></span>': (v.base==='wear'?'<span class="read-note">/weə/=where</span>':''));
+    const pastNote = v.base==='read'?'<span class="read-note">/red/=red</span>': (v.id==='38a' || v.id==='38b' ? '<span class="read-note">/leɪd/ d尾</span>' : (v.id==='43b' ? '<span class="read-note">/laɪd/ d尾</span>' : (v.base==='pay' ? '<span class="read-note">/peɪd/ d尾</span>' : '')));
+    const baseBtn=`<span class="inline-flex items-center gap-1.5"><b>${v.base}</b><button onclick="speak('${v.base.replace(/'/g,"\\'")}',verbs.find(x=>x.id==='${v.id}'),'base')" class="pron-btn">🔊 發音</button>${baseNote}</span>`;
+    const pastBtn=`<span class="inline-flex items-center gap-1.5">${v.past}<button onclick="speak('${v.past.replace(/'/g,"\\'")}',verbs.find(x=>x.id==='${v.id}'),'past')" class="pron-btn">🔊 發音</button>${pastNote}</span>`;
+    const ppBtn=`<span class="inline-flex items-center gap-1.5">${v.pp}<button onclick="speak('${v.pp.replace(/'/g,"\\'")}',verbs.find(x=>x.id==='${v.id}'),'pp')" class="pron-btn">🔊 發音</button></span>`;
+    return `<tr class="border-b hover:bg-amber-50/60 bg-white"><td class="px-4 py-2.5 font-mono text-[12px] text-slate-500">${v.no}</td><td class="px-4 py-2.5">${baseBtn}<div class="text-[10px] text-slate-400">${v.ipaBase||''}</div></td><td class="px-4 py-2.5">${pastBtn}<div class="text-[10px] text-slate-400">${v.ipaPast||''}</div></td><td class="px-4 py-2.5">${ppBtn}<div class="text-[10px] text-slate-400">${v.ipaPP||''}</div></td><td class="px-4 py-2.5 text-[13px]">${v.zh}</td></tr>`;
+  }).join('');
+  const boxFiltered = (boxIds)=> boxIds.map(id=>verbs.find(v=>v.id===id)).filter(v=>v && (filter.group==='all'||v.group===filter.group) && (filter.pattern==='all'||v.pattern===filter.pattern) && (!filter.search || (v.base+v.past+v.pp+v.zh+String(v.no)).toLowerCase().includes(filter.search.toLowerCase())));
+  [1,2,3,4,5].forEach(n=>{
+    const ids=boxes[n];
+    const f=boxFiltered(ids);
+    document.getElementById(`box${n}-count`).textContent=f.length;
+    document.getElementById(`box${n}-list`).innerHTML=f.map(v=>`<button onclick="speak('${v.base}',verbs.find(x=>x.id==='${v.id}'),'base');goToCard('${v.id}')" class="verb-pill">${v.base}</button>`).join('');
+  });
+  document.getElementById('due-count').textContent=boxFiltered(boxes[1]).length+boxFiltered(boxes[2]).length;
+  updateCard();
+}
+function goToCard(id){
+  const filtered=getFiltered();
+  const idx=filtered.findIndex(v=>v.id===id);
+  if(idx>=0){cardIdx=idx;document.querySelector('[data-tab=cards]').click();updateCard();}
+}
+window.speak=speak;
+window.goToCard=goToCard;
+document.querySelectorAll('.tab-btn').forEach(b=>{
+  b.addEventListener('click',()=>{
+    document.querySelectorAll('.tab-btn').forEach(x=>x.classList.remove('tab-active'));
+    b.classList.add('tab-active');
+    document.querySelectorAll('.view').forEach(v=>v.classList.add('hidden'));
+    document.getElementById('view-'+b.dataset.tab).classList.remove('hidden');
+  })
+});
+document.querySelectorAll('.group-btn').forEach(b=>{
+  b.addEventListener('click',()=>{
+    document.querySelectorAll('.group-btn').forEach(x=>x.classList.remove('group-active'));
+    b.classList.add('group-active');
+    filter.group=b.dataset.group;
+    const dictSel=document.getElementById('dict-group');
+    if(dictSel) dictSel.value=filter.group;
+    cardIdx=0;
+    render();
+  })
+});
+document.querySelectorAll('.pattern-btn').forEach(b=>{
+  b.addEventListener('click',()=>{
+    document.querySelectorAll('.pattern-btn').forEach(x=>x.classList.remove('pattern-active'));
+    b.classList.add('pattern-active');
+    filter.pattern=b.dataset.pattern;
+    cardIdx=0;
+    render();
+  })
+});
+document.getElementById('search').addEventListener('input',e=>{filter.search=e.target.value;cardIdx=0;render()});
+function updateCard(){
+  if(filteredForCards.length===0){
+    document.getElementById('card-zh').textContent='沒有符合篩選的詞彙';
+    document.getElementById('card-base').textContent='';
+    document.getElementById('card-no').textContent='';
+    document.getElementById('card-progress').textContent='';
+    document.getElementById('card-ipa').textContent='';
+    document.getElementById('card-past').textContent='';
+    document.getElementById('card-pp').textContent='';
+    return;
+  }
+  const v=filteredForCards[cardIdx];
+  document.getElementById('card-progress').textContent=`${cardIdx+1} / ${filteredForCards.length}`;
+  document.getElementById('card-no').textContent=`No. ${v.no} · ${v.pattern}型 · ${v.group}`;
+  document.getElementById('card-zh').textContent=v.zh;
+  document.getElementById('card-base').textContent=v.base;
+  document.getElementById('card-ipa').textContent=v.ipaBase||'';
+  document.getElementById('card-past').textContent=v.past;
+  document.getElementById('card-past-ipa').textContent=v.ipaPast||'';
+  document.getElementById('card-pp').textContent=v.pp;
+  document.getElementById('card-pp-ipa').textContent=v.ipaPP||'';
+  document.getElementById('card-reveal').classList.add('hidden');
+  document.getElementById('btn-show').classList.remove('hidden');
+  document.getElementById('btn-know').classList.add('hidden');
+  document.getElementById('btn-dunno').classList.add('hidden');
+}
+document.getElementById('btn-show').onclick=()=>{document.getElementById('card-reveal').classList.remove('hidden');document.getElementById('btn-show').classList.add('hidden');document.getElementById('btn-know').classList.remove('hidden');document.getElementById('btn-dunno').classList.remove('hidden')};
+document.getElementById('card-speak-base').onclick=()=>{const v=filteredForCards[cardIdx];speak(v.base,v,'base')};
+document.querySelectorAll('[data-speak]').forEach(b=>b.onclick=()=>{const v=filteredForCards[cardIdx];const field=b.dataset.speak;const text=field==='past'? v.past : v.pp;speak(text,v,field)});
+document.getElementById('btn-know').onclick=()=>{const v=filteredForCards[cardIdx];const id=v.id;Object.keys(boxes).forEach(k=>{boxes[k]=boxes[k].filter(x=>x!==id)});boxes[5].push(id);filteredForCards=filteredForCards.filter(x=>x.id!==id);if(cardIdx>=filteredForCards.length) cardIdx=0;render();};
+document.getElementById('btn-dunno').onclick=()=>{const v=filteredForCards[cardIdx];const id=v.id;Object.keys(boxes).forEach(k=>{boxes[k]=boxes[k].filter(x=>x!==id)});boxes[1].push(id);cardIdx=(cardIdx+1)%filteredForCards.length;updateCard();render();};
+document.getElementById('btn-prev').onclick=()=>{if(filteredForCards.length===0) return;cardIdx=(cardIdx-1+filteredForCards.length)%filteredForCards.length;updateCard()};
+document.getElementById('btn-next').onclick=()=>{if(filteredForCards.length===0) return;cardIdx=(cardIdx+1)%filteredForCards.length;updateCard()};
+document.getElementById('btn-first').onclick=()=>{cardIdx=0;updateCard()};
+document.getElementById('btn-reset-card').onclick=()=>{cardIdx=0;filter.group='all';filter.pattern='all';filter.search='';document.querySelectorAll('.group-btn').forEach(x=>x.classList.remove('group-active'));document.querySelector('[data-group=all]').classList.add('group-active');document.querySelectorAll('.pattern-btn').forEach(x=>x.classList.remove('pattern-active'));document.querySelector('[data-pattern=all]').classList.add('pattern-active');document.getElementById('search').value='';document.getElementById('dict-group').value='all';render()};
+document.getElementById('reset-boxes').onclick=()=>{boxes={1:verbs.map(v=>v.id),2:[],3:[],4:[],5:[]};render()};
+let dictQs=[];
+document.getElementById('start-dict').onclick=()=>{
+  const g=document.getElementById('dict-group').value;
+  let effectiveGroup=g;
+  if(g==='all' && filter.group!=='all') effectiveGroup=filter.group;
+  let pool=verbs.filter(v=>effectiveGroup==='all'||v.group===effectiveGroup);
+  if(filter.pattern!=='all') pool=pool.filter(v=>v.pattern===filter.pattern);
+  if(filter.search) pool=pool.filter(v=>(v.base+v.past+v.pp+v.zh+String(v.no)).toLowerCase().includes(filter.search.toLowerCase()));
+  pool=pool.sort(()=>0.5-Math.random()).slice(0,10);
+  dictQs=pool;
+  document.getElementById('dict-area').innerHTML=pool.map((v,i)=>`
+    <div class="border rounded-2xl p-4 flex flex-col md:flex-row gap-3 md:items-center">
+      <div class="flex-1"><span class="text-[11px] text-slate-500">Q${i+1} No.${v.no}</span> <span class="font-bold ml-2">${v.base}</span> <button onclick="speak('${v.base}',verbs.find(x=>x.id==='${v.id}'),'base')" class="pron-btn ml-2">🔊 發音</button><div class="text-[12px] text-slate-500">${v.zh} <span class="text-[10px]">${v.ipaBase||''}</span></div></div>
+      <div class="flex gap-2 flex-1"><input data-idx="${i}" data-field="past" placeholder="past" autocomplete="off" autocorrect="off" spellcheck="false" inputmode="text" class="flex-1 border rounded-full px-3 py-2 text-[13px]"><input data-idx="${i}" data-field="pp" placeholder="pp" autocomplete="off" autocorrect="off" spellcheck="false" inputmode="text" class="flex-1 border rounded-full px-3 py-2 text-[13px]"></div>
+      <div id="fb-${i}" class="text-[12px]"></div>
+    </div>
+  `).join('')+`<button id="check-dict" class="mt-3 px-5 py-2 rounded-full bg-[#111827] text-white text-[13px] font-bold">立即批改</button>`;
+  document.getElementById('check-dict').onclick=()=>{
+    let c=0;
+    dictQs.forEach((v,i)=>{
+      const past=document.querySelector(`input[data-idx="${i}"][data-field="past"]`).value.trim().toLowerCase();
+      const pp=document.querySelector(`input[data-idx="${i}"][data-field="pp"]`).value.trim().toLowerCase();
+      const okPast=past===v.past.toLowerCase();
+      const okPP=pp===v.pp.toLowerCase();
+      const fb=document.getElementById(`fb-${i}`);
+      if(okPast&&okPP){c++;fb.innerHTML='<span class="text-emerald-600 font-bold">✅</span>'}
+      else fb.innerHTML=`<span class="text-red-600">❌ ${v.past} / ${v.pp}</span>`;
+    });
+    document.getElementById('dict-result').textContent=`得分：${c} / ${dictQs.length}`;
+  };
+};
+document.getElementById('dict-group').addEventListener('change',e=>{
+  filter.group=e.target.value;
+  document.querySelectorAll('.group-btn').forEach(x=>x.classList.remove('group-active'));
+  const target=document.querySelector(`[data-group=${e.target.value}]`);
+  if(target) target.classList.add('group-active');
+  cardIdx=0;
+  render();
+});
+document.getElementById('open-disclaimer').onclick=()=>document.getElementById('disclaimer-modal').classList.remove('hidden');
+document.getElementById('close-disclaimer').onclick=()=>document.getElementById('disclaimer-modal').classList.add('hidden');
+document.getElementById('disclaimer-modal').onclick=e=>{if(e.target.id==='disclaimer-modal')e.currentTarget.classList.add('hidden')};
+render();
+speechSynthesis.getVoices();
+// back to top logic
+const backBtn=document.getElementById('back-to-top');
+window.addEventListener('scroll',()=>{if(window.scrollY>300) backBtn.classList.remove('hidden'); else backBtn.classList.add('hidden');});
+backBtn.onclick=()=>window.scrollTo({top:0,behavior:'smooth'});
+// improve flow: auto scroll to content when tab changes
+document.querySelectorAll('.tab-btn').forEach(b=>{b.addEventListener('click',()=>{setTimeout(()=>{document.querySelector('main').scrollIntoView({behavior:'smooth',block:'start'})},100)})});
+
+</script>
+</body>
+</html>
